@@ -14,6 +14,10 @@ class FilterPagesByTemplate {
 	{
 		add_action( 'restrict_manage_posts', array( $this, 'filter_dropdown' ) );
 		add_filter( 'request', array( $this, 'filter_post_list' ) );
+		
+		add_filter('manage_pages_columns', array( $this, 'post_list_columns_head'));
+		add_action('manage_pages_custom_column', array( $this, 'post_list_columns_content' ), 10, 2);
+
 	}
 	
 	public function filter_dropdown()
@@ -54,6 +58,47 @@ class FilterPagesByTemplate {
 		return $vars;
 	
 	}//end func
+
+	# Add new column to post list
+	public function post_list_columns_head( $columns )
+	{
+	    $columns['template'] = 'Template';
+	    return $columns;
+	}
+	 
+	#post list column content
+	public function post_list_columns_content( $column_name, $post_id )
+	{
+	    $post_type = 'page';
+
+	    if($column_name == 'template')
+	    {
+	        $template = get_post_meta($post_id, "_wp_page_template" , true );
+	        if($template)
+	        {
+	        	if($template == 'default')
+	        	{
+	        		$template_name = apply_filters( 'default_page_template_title',  __( 'Default Template' ), 'meta-box' );
+	        		echo '<span title="Template file : page.php">'.$template_name.'</span>';
+	        	}
+	        	else
+	        	{
+	        		$templates = wp_get_theme()->get_page_templates( null, $post_type );
+
+	        		if( isset( $templates[ $template ] ) )
+	        		{
+	        			echo '<span title="Template file : '.$template.'">'.$templates[ $template ].'</span>';
+	        		}
+	        		else
+	        		{
+	        			
+	        			echo '<span style="color:red" title="This template file does not exist">'.$template.'</span>';
+	        		}
+	        	}
+	            
+	        }
+	    }
+	}
 	
 	
 }//end class
