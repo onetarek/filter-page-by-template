@@ -33,6 +33,7 @@ Just Install and activate. Go to all pages list page, Select a template from the
 == Screenshots ==
 
 1. Page Template Filter Dropdown
+2. Column that shows Page template name
 
 == Changelog ==
 = 1.1 =
