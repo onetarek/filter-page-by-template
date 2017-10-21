@@ -1,11 +1,11 @@
 <?php 
 /*
 Plugin Name: Filter Page by Template
-Description: See list of pages or any type of posts by filtering based on used template. Page template filter dropdown for post/page listing.
+Description: See list of pages or any type of posts by filtering based on used template. Page template filter dropdown for post/page listing. New column in page list that shows template name.
 Plugin URI: http://onetarek.com
 Author: oneTarek
 Author URI: http://onetarek.com
-Version: 1.0
+Version: 1.1
 */
 
 class FilterPagesByTemplate {
