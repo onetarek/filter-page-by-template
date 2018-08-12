@@ -1,10 +1,10 @@
 === Filter Page by Template ===
 Contributors: onetarek
 Donate link: http://wpadguru.com
-Tags: Page Template, Page List Filter, Post List Filter, Custom Filter, Admin
+Tags: Page Template, Page List Filter, Post List Filter, Custom Filter, Admin, Missing templates
 Requires at least: 3.8.0
-Tested up to: 4.8.2
-Stable tag: 1.1
+Tested up to: 4.9.8
+Stable tag: 1.2
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,8 +12,15 @@ See list of pages or any type of posts by filtering based on used template. Page
 
 == Description ==
 
-If your WordPress website has hundreds of pages and your theme has many page templates then sometimes you want to see the pages those are using a specific template. But by default there is no way in WordPress admin to search posts or pages associate with a template. "**[Filter Page by Template](http://onetarek.com/my-wordpress-plugins/filter-page-by-template/)**" plugin helps you to do this. It adds a dropdown list of page template above the post/page list. You can filter posts/pages by selecting a template from the dropdown. There is a new column `Template` in page list table. This `Template` column shows the name of `page template` that is being used for a particular page.  
+If your WordPress website has hundreds of pages and your theme has many page templates then sometimes you want to see the pages those are using a specific template. But by default there is no way in WordPress admin to search posts or pages associate with a template. "**[Filter Page by Template](http://onetarek.com/my-wordpress-plugins/filter-page-by-template/)**" plugin helps you to do this. It adds a dropdown list of page template above the post/page list. You can filter posts/pages by selecting a template from the dropdown. Also you can filter and see pages those are using missing templates. There is a new column `Template` in page list table. This `Template` column shows the name of `page template` that is being used for a particular page. If a template file is not exist then that will be shown in red color. On `Template` column you will see the template's display name. To see the php file name mouse over on the template name. 
 
+**Using this plugin you can do :**
+
+ * Filter page list according to page template
+ * See which page is using which template
+ * See which page template is being used by which pages
+ * See which pages are using missing templates
+ * Know the PHP file name of templates 
 
 == Installation ==
 
@@ -36,6 +43,9 @@ Just Install and activate. Go to all pages list page, Select a template from the
 2. Column that shows Page template name
 
 == Changelog ==
+= 1.2 (August 13, 2018) =
+* New feature : Show pages those are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
+
 = 1.1 =
 * New feature : A new column `Template` has been added to page list table to show name of page template for particular pages
 
@@ -44,6 +54,9 @@ Just Install and activate. Go to all pages list page, Select a template from the
 
 
 == Upgrade Notice ==
+= 1.2 (August 13, 2018) =
+* New feature : Show pages those are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
+
 = 1.1 =
 * New feature : A new column `Template` has been added to page list table to show name of page template for particular pages
 
