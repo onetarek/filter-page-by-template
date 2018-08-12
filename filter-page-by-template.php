@@ -5,7 +5,7 @@ Description: See list of pages or any type of posts by filtering based on used t
 Plugin URI: http://onetarek.com
 Author: oneTarek
 Author URI: http://onetarek.com
-Version: 1.1
+Version: 1.2
 */
 
 class FilterPagesByTemplate {
