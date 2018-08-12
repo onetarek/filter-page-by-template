@@ -31,6 +31,7 @@ class FilterPagesByTemplate {
 		?>
 		<select name="page_template_filter" id="page_template_filter">
 			<option value="all">All Page Templates</option>
+			<option value="all_missing" style="color:red" <?php echo ( $template == 'all_missing' )? ' selected="selected" ' : "";?>>All Missing Page Templates</option>
 			<option value="default" <?php echo ( $template == 'default' )? ' selected="selected" ' : "";?>><?php echo esc_html( $default_title ); ?></option>
 			<?php page_template_dropdown($template); ?>
 		</select>
@@ -43,18 +44,40 @@ class FilterPagesByTemplate {
 		$template = trim($_GET['page_template_filter']);
 		if ( $template == "" || $template == 'all' ) return $vars;
 		
-		$vars = array_merge(
-			$vars,
-			array(
-				'meta_query' => array(
-					array(
-						'key'     => '_wp_page_template',
-						'value'   => $template,
-						'compare' => '=',
+		if( $template == 'all_missing')
+		{
+			$templates = wp_get_theme()->get_page_templates( null, 'page' );
+			$template_files = array_keys($templates);
+			$template_files[] = 'default';
+			$vars = array_merge(
+				$vars,
+				array(
+					'meta_query' => array(
+						array(
+							'key'     => '_wp_page_template',
+							'value'   => $template_files,
+							'compare' => 'NOT IN',
+						)
 					),
-				),
-			)
-		);
+				)
+			);
+		}
+		else
+		{
+			$vars = array_merge(
+				$vars,
+				array(
+					'meta_query' => array(
+						array(
+							'key'     => '_wp_page_template',
+							'value'   => $template,
+							'compare' => '=',
+						),
+					),
+				)
+			);
+		}
+
 		return $vars;
 	
 	}//end func
