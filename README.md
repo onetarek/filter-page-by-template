@@ -15,14 +15,3 @@ If your WordPress website has hundreds of pages and your theme has many page tem
 
 
  ## **[Download from WordPress.org](https://wordpress.org/plugins/filter-page-by-template/)**
-
-
-## Changelog
-= 1.2 (August 13, 2018) =
-* New feature : Show pages those are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
-
-= 1.1 =
-* New feature : A new column `Template` has been added to page list table to show name of page template for particular pages
-
-= 1.0 =
-* Initial release

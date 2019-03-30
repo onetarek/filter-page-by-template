@@ -1,14 +1,14 @@
 === Filter Page by Template ===
 Contributors: onetarek
 Donate link: http://wpadguru.com
-Tags: Page Template, Page List Filter, Post List Filter, Custom Filter, Admin, Missing templates
+Tags: Page Template, Page List Filter, Post List Filter, Custom Filter, Missing templates 
 Requires at least: 3.8.0
-Tested up to: 4.9.8
-Stable tag: 1.2
+Tested up to: 5.1.1
+Stable tag: 1.3
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-See list of pages or any type of posts by filtering based on used template. Page template filter dropdown for post/page listing. New column in page list that shows page template name. 
+See list of pages or any type of posts by filtering based on used template, Page template filter dropdown for post/page listing, New column in page list that shows page template names. 
 
 == Description ==
 
@@ -43,6 +43,9 @@ Just Install and activate. Go to all pages list page, Select a template from the
 2. Column that shows Page template name
 
 == Changelog ==
+= 1.3 (March 29, 2019) =
+* Nothing new , Just update readme with tested up to 5.1.1 version.
+
 = 1.2 (August 13, 2018) =
 * New feature : Show pages those are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
 
@@ -54,6 +57,9 @@ Just Install and activate. Go to all pages list page, Select a template from the
 
 
 == Upgrade Notice ==
+= 1.3 (March 29, 2019) =
+* Nothing new , Just update readme with tested up to 5.1.1 version.
+
 = 1.2 (August 13, 2018) =
 * New feature : Show pages those are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
 
