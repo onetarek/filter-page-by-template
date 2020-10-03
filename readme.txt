@@ -3,8 +3,8 @@ Contributors: onetarek
 Donate link: http://wpadguru.com
 Tags: Page Template, Page List Filter, Post List Filter, Custom Filter, Missing templates 
 Requires at least: 3.8.0
-Tested up to: 5.1.1
-Stable tag: 1.4
+Tested up to: 5.5.1
+Stable tag: 1.5
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ Just Install and activate. Go to all pages list page, Select a template from the
 2. Column that shows Page template name
 
 == Changelog ==
+= 1.5 (October 03, 2020) =
+* Nothing new , Just update readme with tested up to 5.5.1 version.
+
 = 1.4 (March 30, 2019) =
 * Admin notice to rate this plugin on WordPress.org.
 
@@ -60,6 +63,9 @@ Just Install and activate. Go to all pages list page, Select a template from the
 
 
 == Upgrade Notice ==
+= 1.5 (October 03, 2020) =
+* Nothing new , Just update readme with tested up to 5.5.1 version.
+
 = 1.4 (March 30, 2019) =
 * Admin notice to rate this plugin on WordPress.org.
 
