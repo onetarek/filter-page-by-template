@@ -1,10 +1,10 @@
 === Filter Page by Template ===
 Contributors: onetarek
 Donate link: http://wpadguru.com
-Tags: Page Template, Page List Filter, Post List Filter, Custom Filter, Missing templates 
+Tags: Page Template Filter, Page List Filter, Missing templates, Post List Filter, Custom Filter  
 Requires at least: 3.8.0
-Tested up to: 5.5.1
-Stable tag: 1.5
+Tested up to: 5.6
+Stable tag: 1.6
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ Just Install and activate. Go to all pages list page, Select a template from the
 2. Column that shows Page template name
 
 == Changelog ==
+= 1.6 (December 14, 2020) =
+* Nothing new , Just update readme with tested up to 5.6 version.
+
 = 1.5 (October 03, 2020) =
 * Nothing new , Just update readme with tested up to 5.5.1 version.
 
@@ -63,14 +66,17 @@ Just Install and activate. Go to all pages list page, Select a template from the
 
 
 == Upgrade Notice ==
+= 1.6 (December 14, 2020) =
+* Nothing new, Just update readme with tested up to 5.6 version.
+
 = 1.5 (October 03, 2020) =
-* Nothing new , Just update readme with tested up to 5.5.1 version.
+* Nothing new, Just update readme with tested up to 5.5.1 version.
 
 = 1.4 (March 30, 2019) =
 * Admin notice to rate this plugin on WordPress.org.
 
 = 1.3 (March 29, 2019) =
-* Nothing new , Just update readme with tested up to 5.1.1 version.
+* Nothing new, Just update readme with tested up to 5.1.1 version.
 
 = 1.2 (August 13, 2018) =
 * New feature : Show pages those are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
