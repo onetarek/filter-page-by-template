@@ -1,7 +1,7 @@
 === Filter Page by Template ===
 Contributors: onetarek
 Donate link: http://wpadguru.com
-Tags: Page Template Filter, Page List Filter, Missing templates, Post List Filter, Custom Filter  
+Tags: Filter, Page List, Template Filter, Missing templates   
 Requires at least: 3.8.0
 Tested up to: 5.6
 Stable tag: 1.6
