@@ -23,10 +23,10 @@ class fpbt_five_star_wp_rate_notice{
 
 	?>
 		<div class="fpbt-five-star-wp-rate-action notice notice-success">
-			<span class="fpbt-slug"><b>FILTER PAGE BY TEMPALTE</b> <i>Plugin</i></span> 
+			<span class="fpbt-slug"><b>FILTER PAGE BY TEMPLATE</b> <i>Plugin</i></span> 
 
 			<div>
-				Hey, You are using the tempalte filter - that's awesome! Could you please do me a BIG favor and give it a 5-star rating on WordPress? Just to help us spread the word and boost our motivation.
+				Hey, You are using the template filter - that's awesome! Could you please do me a BIG favor and give it a 5-star rating on WordPress? Just to help us spread the word and boost our motivation.
 				<br/><br/>
 				<strong><em>~ oneTarek</em></strong>
 			</div>
