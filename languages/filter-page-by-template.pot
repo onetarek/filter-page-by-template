@@ -1,0 +1,75 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Filter Page by Template\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-18 21:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-5.9.2\n"
+"X-Domain: filter-page-by-template"
+
+#: filter-page-by-template.php:39
+msgid "All Missing Page Templates"
+msgstr ""
+
+#: filter-page-by-template.php:38
+msgid "All Page Templates"
+msgstr ""
+
+#. Name of the plugin
+msgid "Filter Page by Template"
+msgstr ""
+
+#: includes/five_star_wp_rate_notice.php:29
+msgid ""
+"Hey, You are using the template filter - that's awesome! Could you please do "
+"me a BIG favor and give it a 5-star rating on WordPress? Just to help us "
+"spread the word and boost our motivation."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://onetarek.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://onetarek.com/my-wordpress-plugins/filter-page-by-template"
+msgstr ""
+
+#: includes/five_star_wp_rate_notice.php:35
+msgid "I already did"
+msgstr ""
+
+#: includes/five_star_wp_rate_notice.php:36
+msgid "No, not good enough"
+msgstr ""
+
+#: includes/five_star_wp_rate_notice.php:34
+msgid "Ok, you deserve it"
+msgstr ""
+
+#. Author of the plugin
+msgid "oneTarek"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"See list of pages or any type of posts by filtering based on used template. "
+"Page template filter dropdown for post/page listing. New column in page list "
+"that shows template names."
+msgstr ""
+
+#: filter-page-by-template.php:117
+msgid "Template file"
+msgstr ""
+
+#: filter-page-by-template.php:130
+msgid "This template file does not exist"
+msgstr ""
