@@ -3,8 +3,8 @@ Contributors: onetarek
 Donate link: http://wpadguru.com
 Tags: Filter, Page List, Template Filter, Missing templates   
 Requires at least: 3.8.0
-Tested up to: 5.6
-Stable tag: 1.6
+Tested up to: 5.9.2
+Stable tag: 2.0
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,10 @@ Just Install and activate. Go to all pages list page, Select a template from the
 2. Column that shows Page template name
 
 == Changelog ==
+= 2.0 (March 19, 2022) =
+* Make plugin translatable.
+* Fix typo.
+
 = 1.6 (December 14, 2020) =
 * Nothing new , Just update readme with tested up to 5.6 version.
 
@@ -66,6 +70,10 @@ Just Install and activate. Go to all pages list page, Select a template from the
 
 
 == Upgrade Notice ==
+= 2.0 (March 19, 2022) =
+* Make plugin translatable.
+* Fix typo.
+
 = 1.6 (December 14, 2020) =
 * Nothing new, Just update readme with tested up to 5.6 version.
 
