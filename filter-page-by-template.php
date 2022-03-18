@@ -21,7 +21,7 @@ class FilterPagesByTemplate {
 		add_filter('manage_pages_columns', array( $this, 'post_list_columns_head'));
 		add_action('manage_pages_custom_column', array( $this, 'post_list_columns_content' ), 10, 2);
 
-		add_action( 'plugins_loaded', array( $this , 'load_textdomain' ) );
+		add_action( 'init', array( $this , 'load_textdomain' ) );
 
 	}
 	
@@ -140,7 +140,7 @@ class FilterPagesByTemplate {
 	 * @return void
 	 */
 	public function load_textdomain(){
-		load_plugin_textdomain( 'filter-page-by-template', false, "./languages/" );
+		load_plugin_textdomain( 'filter-page-by-template', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 	
 	
