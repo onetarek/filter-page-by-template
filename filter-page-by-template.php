@@ -21,6 +21,8 @@ class FilterPagesByTemplate {
 		add_filter('manage_pages_columns', array( $this, 'post_list_columns_head'));
 		add_action('manage_pages_custom_column', array( $this, 'post_list_columns_content' ), 10, 2);
 
+		add_action( 'plugins_loaded', array( $this , 'load_textdomain' ) );
+
 	}
 	
 	public function filter_dropdown()
@@ -33,8 +35,8 @@ class FilterPagesByTemplate {
 		$default_title = apply_filters( 'default_page_template_title',  __( 'Default Template' ), 'meta-box' );
 		?>
 		<select name="page_template_filter" id="page_template_filter">
-			<option value="all">All Page Templates</option>
-			<option value="all_missing" style="color:red" <?php echo ( $template == 'all_missing' )? ' selected="selected" ' : "";?>>All Missing Page Templates</option>
+			<option value="all"><?php _e( 'All Page Templates', 'filter-page-by-template' ) ?></option>
+			<option value="all_missing" style="color:red" <?php echo ( $template == 'all_missing' )? ' selected="selected" ' : "";?>><?php _e( 'All Missing Page Templates', 'filter-page-by-template' ) ?></option>
 			<option value="default" <?php echo ( $template == 'default' )? ' selected="selected" ' : "";?>><?php echo esc_html( $default_title ); ?></option>
 			<?php page_template_dropdown($template); ?>
 		</select>
@@ -112,7 +114,7 @@ class FilterPagesByTemplate {
 	        	if($template == 'default')
 	        	{
 	        		$template_name = apply_filters( 'default_page_template_title',  __( 'Default Template' ), 'meta-box' );
-	        		echo '<span title="Template file : page.php">'.$template_name.'</span>';
+	        		echo '<span title="' . esc_attr( __( 'Template file', 'filter-page-by-template' ) ) . ': page.php">'.$template_name.'</span>';
 	        	}
 	        	else
 	        	{
@@ -120,17 +122,25 @@ class FilterPagesByTemplate {
 
 	        		if( isset( $templates[ $template ] ) )
 	        		{
-	        			echo '<span title="Template file : '.$template.'">'.$templates[ $template ].'</span>';
+	        			echo '<span title="Template file: '.$template.'">'.$templates[ $template ].'</span>';
 	        		}
 	        		else
 	        		{
 	        			
-	        			echo '<span style="color:red" title="This template file does not exist">'.$template.'</span>';
+	        			echo '<span style="color:red" title="' . esc_attr( __( 'This template file does not exist', 'filter-page-by-template' ) ) . '">'.$template.'</span>';
 	        		}
 	        	}
 	            
 	        }
 	    }
+	}
+
+	/**
+	 * @since 2.0
+	 * @return void
+	 */
+	public function load_textdomain(){
+		load_plugin_textdomain( 'filter-page-by-template', false, FPBT_EMBEDER_PLUGIN_DIR."languages/" );
 	}
 	
 	

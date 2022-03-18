@@ -26,14 +26,14 @@ class fpbt_five_star_wp_rate_notice{
 			<span class="fpbt-slug"><b>FILTER PAGE BY TEMPLATE</b> <i>Plugin</i></span> 
 
 			<div>
-				Hey, You are using the template filter - that's awesome! Could you please do me a BIG favor and give it a 5-star rating on WordPress? Just to help us spread the word and boost our motivation.
+				<?php _e("Hey, You are using the template filter - that's awesome! Could you please do me a BIG favor and give it a 5-star rating on WordPress? Just to help us spread the word and boost our motivation.", "filter-page-by-template" ) ?>
 				<br/><br/>
 				<strong><em>~ oneTarek</em></strong>
 			</div>
 			<ul data-nonce="<?php echo wp_create_nonce( 'fpbt_five_star_wp_rate_action_nonce' ) ?>">
-				<li><a data-rate-action="do-rate" target="_blank" href="https://wordpress.org/support/plugin/filter-page-by-template/reviews/?rate=5#postform">Ok, you deserve it</a></li>
-				<li><a data-rate-action="done-rating" href="#">I already did</a></li>
-				<li><a data-rate-action="not-enough" href="#">No, not good enough</a></li>
+				<li><a data-rate-action="do-rate" target="_blank" href="https://wordpress.org/support/plugin/filter-page-by-template/reviews/?rate=5#postform"><?php _e( 'Ok, you deserve it', 'filter-page-by-template' ) ?></a></li>
+				<li><a data-rate-action="done-rating" href="#"><?php _e( 'I already did', 'filter-page-by-template' ) ?></a></li>
+				<li><a data-rate-action="not-enough" href="#"><?php _e( 'No, not good enough', 'filter-page-by-template' ) ?></a></li>
 			</ul>
 		</div>
 	<?php 
