@@ -140,7 +140,7 @@ class FilterPagesByTemplate {
 	 * @return void
 	 */
 	public function load_textdomain(){
-		load_plugin_textdomain( 'filter-page-by-template', false, FPBT_EMBEDER_PLUGIN_DIR."languages/" );
+		load_plugin_textdomain( 'filter-page-by-template', false, "./languages/" );
 	}
 	
 	
