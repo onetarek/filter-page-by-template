@@ -24,12 +24,16 @@ class Filter_Page_By_Template {
 
 	}
 	
+	public function current_post_type() {
+		return isset( $_GET['post_type'] ) ? $_GET['post_type'] : 'post';
+	}
+
 	public function filter_dropdown() {
 		if ( $GLOBALS['pagenow'] === 'upload.php' ) {
 			return;
 		}
 
-		$post_type = isset( $_GET['post_type'] ) ? $_GET['post_type'] : 'page';
+		$post_type = $this->current_post_type();
 		$template = isset( $_GET['page_template_filter'] ) ? $_GET['page_template_filter'] : "all"; 
 		$default_title = apply_filters( 'default_page_template_title',  __( 'Default Template' ), 'meta-box' );
 		?>
