@@ -3,8 +3,8 @@ Contributors: onetarek
 Donate link: http://wpadguru.com
 Tags: Filter, Page List, Template Filter, Missing templates   
 Requires at least: 3.8.0
-Tested up to: 5.9.2
-Stable tag: 2.2
+Tested up to: 6.0.1
+Stable tag: 3.0
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,11 +16,12 @@ If your WordPress website has hundreds of pages and your theme has many page tem
 
 **Using this plugin you can do :**
 
- * Filter page list according to page template
- * See which page is using which template
- * See which page template is being used by which pages
- * See which pages are using missing templates
- * Know the PHP file name of templates 
+ * Filter page list according to page template.
+ * See which page is using which template.
+ * See which page template is being used by which pages.
+ * See which pages are using missing templates.
+ * Know the PHP file name of templates.
+ * You can do the same things above for posts and any custom post type posts.
 
 == Installation ==
 
@@ -43,6 +44,10 @@ Just Install and activate. Go to all pages list page, Select a template from the
 2. Column that shows Page template name
 
 == Changelog ==
+= 3.0 (August 25, 2022) =
+* Show appropriate templates dropdown list for posts and custom post types.
+* Show template column for posts and custom post types.
+
 = 2.2 (March 19, 2022) =
 * Fix plugin translation.
 
@@ -76,6 +81,10 @@ Just Install and activate. Go to all pages list page, Select a template from the
 
 
 == Upgrade Notice ==
+= 3.0 (August 25, 2022) =
+* Show appropriate templates dropdown list for posts and custom post types.
+* Show template column for posts and custom post types.
+
 = 2.2 (March 19, 2022) =
 * Fix plugin translation.
 
