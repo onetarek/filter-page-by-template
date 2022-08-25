@@ -28,7 +28,8 @@ class Filter_Page_By_Template {
 		if ( $GLOBALS['pagenow'] === 'upload.php' ) {
 			return;
 		}
-	
+
+		$post_type = isset( $_GET['post_type'] ) ? $_GET['post_type'] : 'page';
 		$template = isset( $_GET['page_template_filter'] ) ? $_GET['page_template_filter'] : "all"; 
 		$default_title = apply_filters( 'default_page_template_title',  __( 'Default Template' ), 'meta-box' );
 		?>
@@ -36,7 +37,7 @@ class Filter_Page_By_Template {
 			<option value="all"><?php _e( 'All Page Templates', 'filter-page-by-template' ) ?></option>
 			<option value="all_missing" style="color:red" <?php echo ( $template == 'all_missing' )? ' selected="selected" ' : "";?>><?php _e( 'All Missing Page Templates', 'filter-page-by-template' ) ?></option>
 			<option value="default" <?php echo ( $template == 'default' )? ' selected="selected" ' : "";?>><?php echo esc_html( $default_title ); ?></option>
-			<?php page_template_dropdown($template); ?>
+			<?php page_template_dropdown( $template, $post_type ); ?>
 		</select>
 		<?php	
 	}//end func 
