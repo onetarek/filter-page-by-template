@@ -8,8 +8,8 @@ Author URI: http://onetarek.com
 Version: 2.2
 */
 
-define ( 'FPBT_EMBEDER_PLUGIN_DIR', dirname(__FILE__) ); // Plugin Directory
-define ( 'FPBT_EMBEDER_PLUGIN_URL', plugin_dir_url(__FILE__) ); // Plugin URL (for http requests)
+define ( 'FILTER_PAGE_BY_TEMPLATE_PLUGIN_DIR', dirname(__FILE__) ); // Plugin Directory
+define ( 'FILTER_PAGE_BY_TEMPLATE_PLUGIN_URL', plugin_dir_url(__FILE__) ); // Plugin URL (for http requests)
 
 class FilterPagesByTemplate {
 	
@@ -149,5 +149,5 @@ class FilterPagesByTemplate {
 if( is_admin() )
 {
    new FilterPagesByTemplate();
-   include_once(FPBT_EMBEDER_PLUGIN_DIR."/includes/five_star_wp_rate_notice.php"); 
+   include_once(FILTER_PAGE_BY_TEMPLATE_PLUGIN_DIR."/includes/five_star_wp_rate_notice.php"); 
 }

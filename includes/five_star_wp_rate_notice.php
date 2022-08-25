@@ -42,7 +42,7 @@ class fpbt_five_star_wp_rate_notice{
 
 	function admin_enqueue_scripts()
 	{
-		wp_enqueue_script('fpbt_rate_notice', FPBT_EMBEDER_PLUGIN_URL.'js/five_star_wp_rate_notice.js', array('jquery') );
+		wp_enqueue_script('fpbt_rate_notice', FILTER_PAGE_BY_TEMPLATE_PLUGIN_URL.'js/five_star_wp_rate_notice.js', array('jquery') );
 	}
 
 	public function ajax_handle(){
