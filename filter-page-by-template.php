@@ -11,7 +11,7 @@ Version: 2.2
 define ( 'FILTER_PAGE_BY_TEMPLATE_PLUGIN_DIR', dirname(__FILE__) ); // Plugin Directory
 define ( 'FILTER_PAGE_BY_TEMPLATE_PLUGIN_URL', plugin_dir_url(__FILE__) ); // Plugin URL (for http requests)
 
-class FilterPagesByTemplate {
+class Filter_Page_By_Template {
 	
 	public function __construct()
 	{
@@ -148,6 +148,6 @@ class FilterPagesByTemplate {
 
 if( is_admin() )
 {
-   new FilterPagesByTemplate();
+   new Filter_Page_By_Template();
    include_once(FILTER_PAGE_BY_TEMPLATE_PLUGIN_DIR."/includes/five_star_wp_rate_notice.php"); 
 }
