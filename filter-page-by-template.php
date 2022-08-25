@@ -23,7 +23,6 @@ class Filter_Page_By_Template {
 		}
 
 		add_action( 'init', array( $this , 'load_textdomain' ) );
-
 	}
 	
 	public function current_post_type() {
@@ -49,7 +48,6 @@ class Filter_Page_By_Template {
 	}//end func 
 	
 	public function filter_post_list( $vars ) {
-
 		if ( ! isset( $_GET['page_template_filter'] ) ) return $vars;
 		$template = trim( $_GET['page_template_filter'] );
 
