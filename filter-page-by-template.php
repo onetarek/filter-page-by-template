@@ -5,7 +5,7 @@ Description: See list of pages or any type of posts by filtering based on used t
 Plugin URI: http://onetarek.com/my-wordpress-plugins/filter-page-by-template
 Author: oneTarek
 Author URI: http://onetarek.com
-Version: 2.2
+Version: 3.0
 */
 
 define ( 'FILTER_PAGE_BY_TEMPLATE_PLUGIN_DIR', dirname(__FILE__) ); // Plugin Directory
