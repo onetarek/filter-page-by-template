@@ -14,11 +14,13 @@ define ( 'FILTER_PAGE_BY_TEMPLATE_PLUGIN_URL', plugin_dir_url(__FILE__) ); // Pl
 class Filter_Page_By_Template {
 	
 	public function __construct() {
-		add_action( 'restrict_manage_posts', array( $this, 'filter_dropdown' ) );
-		add_filter( 'request', array( $this, 'filter_post_list' ) );
-		
-		add_filter('manage_pages_columns', array( $this, 'post_list_columns_head') );
-		add_action('manage_pages_custom_column', array( $this, 'post_list_columns_content' ), 10, 2 );
+		if( $GLOBALS['pagenow'] == 'edit.php' ) {
+			$post_type = $this->current_post_type();
+			add_action( 'restrict_manage_posts', array( $this, 'filter_dropdown' ) );
+			add_filter( 'request', array( $this, 'filter_post_list' ) );
+			add_filter( "manage_{$post_type}_posts_columns", array( $this, 'post_list_columns_head') );
+			add_action( "manage_{$post_type}_posts_custom_column", array( $this, 'post_list_columns_content' ), 10, 2 );
+		}
 
 		add_action( 'init', array( $this , 'load_textdomain' ) );
 
@@ -102,7 +104,7 @@ class Filter_Page_By_Template {
 	 
 	#post list column content
 	public function post_list_columns_content( $column_name, $post_id ) {
-	    $post_type = 'page';
+	    $post_type = $this->current_post_type();
 
 	    if( $column_name == 'template' ) {
 	        $template = get_post_meta( $post_id, "_wp_page_template" , true );
