@@ -14,7 +14,7 @@ define ( 'FILTER_PAGE_BY_TEMPLATE_PLUGIN_URL', plugin_dir_url(__FILE__) ); // Pl
 class Filter_Page_By_Template {
 	
 	public function __construct() {
-		if( $GLOBALS['pagenow'] == 'edit.php' ) {
+		if( !empty( $GLOBALS['pagenow'] ) && $GLOBALS['pagenow'] == 'edit.php' ) {
 			$post_type = $this->current_post_type();
 			add_action( 'restrict_manage_posts', array( $this, 'filter_dropdown' ) );
 			add_filter( 'request', array( $this, 'filter_post_list' ) );
@@ -30,7 +30,7 @@ class Filter_Page_By_Template {
 	}
 
 	public function filter_dropdown() {
-		if ( $GLOBALS['pagenow'] === 'upload.php' ) {
+		if ( empty( $GLOBALS['pagenow'] ) || $GLOBALS['pagenow'] === 'upload.php' ) {
 			return;
 		}
 
