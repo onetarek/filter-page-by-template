@@ -3,8 +3,8 @@ Contributors: onetarek
 Donate link: http://wpadguru.com
 Tags: Filter, Page List, Template Filter, Missing templates   
 Requires at least: 3.8.0
-Tested up to: 6.0.1
-Stable tag: 3.0
+Tested up to: 6.0.2
+Stable tag: 3.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,9 @@ Just Install and activate. Go to all pages list page, Select a template from the
 2. Column that shows Page template name
 
 == Changelog ==
+= 3.1 (October 05, 2022) =
+* Fix PHP Notice: Undefined index: pagenow.
+
 = 3.0 (August 25, 2022) =
 * Show appropriate templates dropdown list for posts and custom post types.
 * Show template column for posts and custom post types.
@@ -81,6 +84,9 @@ Just Install and activate. Go to all pages list page, Select a template from the
 
 
 == Upgrade Notice ==
+= 3.1 (October 05, 2022) =
+* Fix PHP Notice: Undefined index: pagenow.
+
 = 3.0 (August 25, 2022) =
 * Show appropriate templates dropdown list for posts and custom post types.
 * Show template column for posts and custom post types.
