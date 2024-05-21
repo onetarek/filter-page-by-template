@@ -3,7 +3,7 @@ Contributors: onetarek
 Donate link: http://wpadguru.com
 Tags: Filter, Page List, Template Filter, Missing templates   
 Requires at least: 3.8.0
-Tested up to: 6.1.1
+Tested up to: 6.5.3
 Stable tag: 3.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
