@@ -1,7 +1,7 @@
 <?php 
 /*
 Plugin Name: Filter Page by Template
-Description: See list of pages or any type of posts by filtering based on used template. Page template filter dropdown for post/page listing. New column in page list that shows template names.
+Description: Filter the list of pages, posts and custom post-type based on the used page template. A dropdown and a column to show page template names.
 Plugin URI: http://onetarek.com/my-wordpress-plugins/filter-page-by-template
 Author: oneTarek
 Author URI: http://onetarek.com
