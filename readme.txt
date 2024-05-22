@@ -8,20 +8,20 @@ Stable tag: 3.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-See list of pages or any type of posts by filtering based on used template, Page template filter dropdown for post/page listing, New column in page list that shows page template names. 
+Filter the list of pages, posts and custom post-type based on the used page template. A dropdown and a column to show page template names. 
 
 == Description ==
 
-If your WordPress website has hundreds of pages and your theme has many page templates then sometimes you want to see the pages those are using a specific template. But by default there is no way in WordPress admin to search posts or pages associate with a template. "**[Filter Page by Template](http://onetarek.com/my-wordpress-plugins/filter-page-by-template/)**" plugin helps you to do this. It adds a dropdown list of page template above the post/page list. You can filter posts/pages by selecting a template from the dropdown. Also you can filter and see pages those are using missing templates. There is a new column `Template` in page list table. This `Template` column shows the name of `page template` that is being used for a particular page. If a template file is not exist then that will be shown in red color. On `Template` column you will see the template's display name. To see the php file name mouse over on the template name. 
+If your WordPress website has hundreds of pages and your theme has many page templates then sometimes you want to see the pages that are using a specific template. But by default, there is no way in WordPress admin to search posts or pages associated with a template. "**[Filter Page by Template](http://onetarek.com/my-wordpress-plugins/filter-page-by-template/)**" plugin helps you to do this. It adds a dropdown list of page templates above the post/page list. You can filter posts/pages by selecting a template from the dropdown. Also, you can filter and see pages that are using missing templates. There is a new column `Template` in the page list table. This `Template` column shows the name of the `page template` that is being used for a particular page. If a template file is not exist then that will be shown in red color. On the `Template` column you will see the template's display name. To see the php file name mouse over on the template name. 
 
-**Using this plugin you can do :**
+**Using this plugin you can do:**
 
  * Filter page list according to page template.
  * See which page is using which template.
  * See which page template is being used by which pages.
  * See which pages are using missing templates.
  * Know the PHP file name of templates.
- * You can do the same things above for posts and any custom post type posts.
+ * You can do the same things above for posts and any custom post-type posts.
 
 == Installation ==
 
@@ -36,7 +36,7 @@ If your WordPress website has hundreds of pages and your theme has many page tem
 
 
 = How To Use Filter Page by Template: =
-Just Install and activate. Go to all pages list page, Select a template from the dropdown and click on filter button.
+Just Install and activate. Go to all pages list page, Select a template from the dropdown and click on the filter button.
 
 == Screenshots ==
 
@@ -48,7 +48,7 @@ Just Install and activate. Go to all pages list page, Select a template from the
 * Fix PHP Notice: Undefined index: pagenow.
 
 = 3.0 (August 25, 2022) =
-* Show appropriate templates dropdown list for posts and custom post types.
+* Show the dropdown list of appropriate templates for posts and custom post types.
 * Show template column for posts and custom post types.
 
 = 2.2 (March 19, 2022) =
@@ -58,47 +58,7 @@ Just Install and activate. Go to all pages list page, Select a template from the
 * Fix plugin translation.
 
 = 2.0 (March 19, 2022) =
-* Make plugin translatable.
-* Fix typo.
-
-= 1.6 (December 14, 2020) =
-* Nothing new , Just update readme with tested up to 5.6 version.
-
-= 1.5 (October 03, 2020) =
-* Nothing new , Just update readme with tested up to 5.5.1 version.
-
-= 1.4 (March 30, 2019) =
-* Admin notice to rate this plugin on WordPress.org.
-
-= 1.3 (March 29, 2019) =
-* Nothing new , Just update readme with tested up to 5.1.1 version.
-
-= 1.2 (August 13, 2018) =
-* New feature : Show pages those are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
-
-= 1.1 =
-* New feature : A new column `Template` has been added to page list table to show name of page template for particular pages
-
-= 1.0 =
-* Initial release
-
-
-== Upgrade Notice ==
-= 3.1 (October 05, 2022) =
-* Fix PHP Notice: Undefined index: pagenow.
-
-= 3.0 (August 25, 2022) =
-* Show appropriate templates dropdown list for posts and custom post types.
-* Show template column for posts and custom post types.
-
-= 2.2 (March 19, 2022) =
-* Fix plugin translation.
-
-= 2.1 (March 19, 2022) =
-* Fix plugin translation.
-
-= 2.0 (March 19, 2022) =
-* Make plugin translatable.
+* Make the plugin translatable.
 * Fix typo.
 
 = 1.6 (December 14, 2020) =
@@ -114,10 +74,50 @@ Just Install and activate. Go to all pages list page, Select a template from the
 * Nothing new, Just update readme with tested up to 5.1.1 version.
 
 = 1.2 (August 13, 2018) =
-* New feature : Show pages those are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
+* New feature: Show pages that are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
 
 = 1.1 =
-* New feature : A new column `Template` has been added to page list table to show name of page template for particular pages
+* New feature: A new column `Template` has been added to the page list table to show the name of the page template for particular pages
+
+= 1.0 =
+* Initial release
+
+
+== Upgrade Notice ==
+= 3.1 (October 05, 2022) =
+* Fix PHP Notice: Undefined index: pagenow.
+
+= 3.0 (August 25, 2022) =
+* Show the dropdown list of appropriate templates for posts and custom post types.
+* Show template column for posts and custom post types.
+
+= 2.2 (March 19, 2022) =
+* Fix plugin translation.
+
+= 2.1 (March 19, 2022) =
+* Fix plugin translation.
+
+= 2.0 (March 19, 2022) =
+* Make the plugin translatable.
+* Fix typo.
+
+= 1.6 (December 14, 2020) =
+* Nothing new, Just update readme with tested up to 5.6 version.
+
+= 1.5 (October 03, 2020) =
+* Nothing new, Just update readme with tested up to 5.5.1 version.
+
+= 1.4 (March 30, 2019) =
+* Admin notice to rate this plugin on WordPress.org.
+
+= 1.3 (March 29, 2019) =
+* Nothing new, Just update readme with tested up to 5.1.1 version.
+
+= 1.2 (August 13, 2018) =
+* New feature: Show pages that are using missing templates. A new item "All Missing Page Templates" has been added to the page template dropdown list.
+
+= 1.1 =
+* New feature: A new column `Template` has been added to the page list table to show the name of the page template for particular pages
 
 = 1.0 =
 * Initial release
